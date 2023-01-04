@@ -2,10 +2,56 @@
 GET http://localhost:8081/person
 
 ###
+GET http://localhost:8081/person/delete
+
+
+###
+GET http://localhost:8081/person/3
+
+###
 POST  http://localhost:8081/person
 Content-Type: application/json
 
 {
 "username": "vusala",
 "password": "butterfly"
+}
+
+
+###
+POST  http://localhost:8081/person
+Content-Type: application/json
+
+{
+  "username": "melo",
+  "password": "arch"
+}
+
+###
+POST  http://localhost:8081/person/buggy
+Content-Type: application/json
+
+{
+  "username": "dinare",
+  "password": "med"
+}
+
+
+###
+POST  http://localhost:8081/person/buggy
+Content-Type: application/json
+
+{
+  "id": "10",
+  "username": "dinare2",
+  "password": "med"
+}
+
+###
+POST  http://localhost:8081/person
+Content-Type: application/json
+
+{
+  "username": "zohra",
+  "password": "venus"
 }
